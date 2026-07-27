@@ -1,0 +1,1 @@
+SUBSYSTEM=="misc", KERNEL=="raw-gadget", GROUP="raw-gadget", MODE="0660"
