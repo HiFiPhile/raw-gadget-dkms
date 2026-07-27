@@ -70,6 +70,14 @@ To test against a prepared kernel header tree:
 ./scripts/build-one.sh /path/to/kernel/build
 ```
 
+## Continuous integration
+
+GitHub Actions builds the module and runs ShellCheck in official Ubuntu 24.04
+and Ubuntu 26.04 containers. GitHub-hosted runners do not currently provide an
+`ubuntu-26.04` runner label, so both containers run on the supported
+`ubuntu-24.04` Linux runner and install their own distribution
+`linux-headers-generic` package.
+
 ## Uninstall
 
 Stop any process using `/dev/raw-gadget`, then run:
