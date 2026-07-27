@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 kernel_dir=$1
-repo_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+repo_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 build_dir=$(mktemp -d)
 
 cleanup() {

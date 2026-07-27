@@ -5,7 +5,7 @@ package_name="raw-gadget"
 package_version="1.0.0"
 module_name="raw_gadget"
 device_group="raw-gadget"
-script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+script_dir=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
 target_user=${SUDO_USER:-}
 
 usage() {
